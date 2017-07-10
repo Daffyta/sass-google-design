@@ -1,0 +1,74 @@
+@import "variables";
+@import "grids";
+
+header {
+  text-align: center;
+  .logo {
+    padding: 3em 0 2em 0;
+  }
+
+  .search {
+    float: right;
+    padding: 0px 0em 0 25em;
+    margin-top: 4em;
+    position: absolute;
+  }
+
+  nav {
+    font-family: $font-principal;
+    font-weight: 500;
+    ul{
+      display: inline-flex;
+      .menu{
+        padding: 0 3em;
+        list-style: none;
+      }
+    }
+  }
+}
+
+#portada {
+  .portada{
+    max-width: 100%;
+    padding: 2em;
+  }
+  h1{
+    font-family: $font-titles;
+    font-size: 3em;
+    font-weight: 400;
+    color: $color-titles;
+    padding: 0 7%;
+  }
+  h3{
+    font-family: $font-titles;
+    color: $color-titles;
+    padding: 0 7%;
+    font-size: 1.6em;
+    font-weight: 100;
+  }
+  hr{
+    margin: 1em;
+  }
+  p{
+    font-family: $font-principal;
+    padding: 0 7%;
+  }
+  .pie{
+    font-family: $font-footerpage;
+    padding: 3% 7%;
+  }
+}
+
+@mixin blue-line {
+    border-top: 4px solid #4285f4;
+}
+
+#newsfeed {
+  h2{
+    @include blue-line;
+    padding-top: 3%;
+    font-family: $font-principal;
+    font-weight: normal;
+    padding-left: 5%;
+  }
+}
